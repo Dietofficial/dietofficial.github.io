@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Diet.</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+<body>
+        <header>
+		<!-- navbar Section -->
+		
+            <nav class="navbar">
+			<img id="logo" src="your_logo.png" alt="#">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+		  <li>
+			<a href="#contact">Contact</a>
+		  </li>
+        </ul>
+      </div>
+    </nav>
+            
+        </header>
+		<!-- Home Section -->
+		<section class="bg">
+            <h1>Healthy Diet = Healthy Life</h1>
+			<div id="down" class="half-width">
+            <p class="P">
+                A healthy diet is a well-balanced eating plan that provides essential nutrients,
+				vitamins, and minerals while promoting overall health and well-being.
+				It consists of a variety of nutrient-rich foods in appropriate portions,
+				catering to individual needs and preferences.A healthy diet not only nourishes
+				the body but also helps maintain a healthy weight, supports the immune system, 
+				reduces the risk of chronic diseases, and enhances overall quality of life.
+				It is essential to consult with a healthcare professional or registered dietitian
+				to receive personalized advice and ensure the diet meets specific health goals.
+            </p>
+			</div>
+			<div class="half-width">
+            <img id="img"  src="diet.png" alt="Diet">
+			</div>
+			
+    </section>
+
+    <section id="about">
+		<div class="About">
+        <h2>About Us</h2>
+        <p>
+            Welcome to our website! We offers personalized meal plans, nutritional advice, and helpful tools to assist
+			individuals in achieving their health and wellness goals. These websites typically provide a variety of
+			diet options tailored to different needs, such as weight loss, muscle gain, or specific dietary preferences. 
+			Users can access recipe ideas, grocery lists, and tracking features to monitor their progress and stay on
+			track with their chosen diet plan. With expert guidance and user-friendly interfaces, diet plan websites aim
+			to empower individuals to make informed choices and adopt healthier eating habits for a more balanced and fulfilling
+			lifestyle.
+        </p>
+        <a class="link-button" target="_blank" href="https://www.bbcgoodfood.com/health/healthy-diet-plan">See More</a>
+		</div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul id="serviceList">
+            <li> Customized meal plans tailored to your unique health and fitness goals, making healthy eating a breeze.
+				 Expert nutritional guidance from certified dietitians, empowering you to make informed choices for a balanced lifestyle.
+			</li>
+            <li> Discover a variety of delicious and nutritious recipes to keep you excited about your journey to better health.
+				 Our team of dedicated coaches will support and motivate you every step of the way on your path to a healthier you.
+				 Experience the benefits of a well-balanced diet with increased energy, improved digestion, and enhanced mental clarity.
+			</li>
+            <li> Unlock the secrets to sustainable weight loss and long-term wellness through our science-backed diet programs.
+				 Join a community of like-minded individuals on their quest for improved health and share your success stories</li>
+            <li> Transform your eating habits with our easy-to-follow meal plans, designed to fit your busy lifestyle.
+				 Achieve your weight management goals with our personalized diet solutions, focusing on long-lasting results.
+				 Embrace a healthier relationship with food and learn to nourish your body with the nutrients it deserves.</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="image1_thumbnail.png" alt="Image 1">
+            <img src="image2_thumbnail.png" alt="Image 2">
+            <img src="image3_thumbnail.png" alt="Image 3">
+            <img src="image4_thumbnail.png" alt="Image 4">
+        </div>
+	</section>	
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div id="contactForm">
+            <form onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="formError" class="error" style="display: none;"></div>
+        </div>
+    </section>
+
+    <section id="information">
+	<div class="acord">
+        <h2 class="acord-title">Frequently Asked Questions</h2>
+        <div class="content-container">
+            <div class="question">What is a balanced diet?</div>
+            <div class="answer">A balanced diet refers to a meal plan that includes a variety of nutrient-rich foods in appropriate portions.
+				It should consist of a combination of carbohydrates, proteins, healthy fats, vitamins, and minerals to meet your body's nutritional needs.
+			</div>
+        </div>
+        <div class="content-container">
+            <div class="question"> How can I lose weight effectively and safely?</div>
+            <div class="answer"> Effective weight loss involves a combination of a balanced diet, regular physical activity, and lifestyle changes.
+				We recommend consulting with our certified dietitians who can create a personalized meal plan and guide you through your weight loss journey safely.
+			</div>
+        </div>
+        <div class="content-container">
+            <div class="question">Are there any specific diets you recommend for weight loss?</div>
+            <div class="answer">Our dietitians will assess your individual needs and preferences to design a customized weight loss plan that suits you best.
+				We focus on sustainable and healthy approaches to weight management.
+			</div>
+        </div>
+    </div> 
+    </section>
+	<section id="quote">
+		 <div class="container">
+        <div class="header">
+            <h2> Motivational Quotes</h2>
+        </div>
+
+        <div class="main-content">
+            <div class="text-area">
+                <span class="quote">
+                    "Your diet is a bank account. Good food choices are good investments."
+                </span>
+            </div>
+            <div class="person"> Bethenny Frankel</div>
+
+            <div class="button-area">
+                <button id="newquote">New Quote</button>
+            </div>
+        </div>
+    </div> 
+	</section>
+	<footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

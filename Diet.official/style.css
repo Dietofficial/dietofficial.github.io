@@ -1,0 +1,357 @@
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+	font-size: 17px;
+	background-color: #f2eeed;
+	}
+
+	h1, h2, h3 {
+		font-family: "Pacifico", cursive;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	/* Initial landing section */
+	header {
+		background-color: #131313;
+		color: #fff;
+		text-align: center;
+		padding: 8px;
+	}
+
+	#logo {
+		height: 100px;
+		width: 100px;
+		border-radius: 5px;
+		box-shadow: 1px 1px 6px black;
+		display: flex;
+		
+	}
+
+	.navbar {
+		background: #131313;
+		height: 95px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.2rem;
+		position: sticky;
+		top: 0;
+		z-index: 999;
+	}
+
+	.navbar__container {
+		display: flex;
+		justify-content: space-between;
+		height: 80px;
+		z-index: 1;
+		width: 100%;
+		max-width: 1250px;
+		margin: 0 auto;
+		padding: 0 50px;
+	}
+
+	nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav li {
+		display: inline-block;
+		margin: 0 15px;
+	}
+
+	@media screen and (max-width: 960px) {
+		.navbar__container {
+			display: flex;
+			justify-content: space-between;
+			height: 0px;
+			z-index: 1;
+			width: 100%;
+			max-width: 1300px;
+			padding: 0;
+		}
+	}
+
+	h1 {
+		padding: 20px;
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+	
+	.P {
+		padding: 10px;
+	}
+
+	.half-width {
+		width: 30%;
+		float: left;
+		margin-left: 0%;
+		padding-left: 0%;
+	}
+	.half-width img {
+		width: 100%;
+		margin-left: 2%;
+		padding-bottom: 8%;
+	}
+	/* media queries to adjust the layout for larger screens */
+	@media (min-width: 768px) {
+		.half-width{
+		width: 30%;
+		float: left;
+		margin-left:3%;
+		padding-left:2%;
+	   }
+	   
+		.half-width img {
+			width: 85%;
+			margin-left: 45%;
+			padding-bottom: 8%;
+		}
+	}
+
+	.link-button {
+		text-decoration: none;
+		background-image: linear-gradient(45deg, rgb(186, 65, 152), deeppink);
+		padding: 10px 20px;
+		border-radius: 5px;
+		color: whitesmoke;
+		font-weight: 700;
+	}
+
+	/* About section */
+	#about {
+		padding: 20px;
+		margin-right: 20px;
+	}
+
+	.About {
+		padding-top: 30%;
+	}
+
+	/* Services section */
+	#services {
+		padding: 20px;
+	}
+
+	#serviceList {
+		margin: 0;
+		padding: 20px;
+	}
+
+	#serviceList li {
+		margin-bottom: 5px;
+	}
+
+	/* Gallery section */
+	#gallery {
+		padding: 20px;
+	}
+
+	.gallery img {
+		width: 470px;
+		height: 440px;
+		margin: 5px;
+		cursor: pointer;
+	}
+
+	/* Contact section */
+	#contact {
+		padding: 20px;
+	}
+
+	#contactForm {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	select,
+	textarea {
+		width: 100%;
+		padding: 8px;
+		margin-bottom: 10px;
+	}
+
+	input[type="submit"] {
+		background-image: linear-gradient(45deg, rgb(186, 65, 152), deeppink);
+		color: whitesmoke;
+		border: none;
+		padding: 10px 20px;
+		cursor: pointer;
+	}
+
+	
+
+	/* Information section */
+	#information {
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	.acord{
+		width:65%;
+		background-color: #e6ecf0;
+		padding:30px;
+		border-radius:30px;
+	}
+	.acord-title{
+		margin-bottom:10px;
+		text-align: center;
+	}
+	.acord .question{
+		padding:20px 0px;
+		font-size:18px;
+		cursor: pointer;
+		border-bottom: 1px solid #000;
+		position: relative;
+	}
+	.question::after{
+		content:'+';
+		position: absolute;
+		right: -4px;
+	}
+	.answer{
+		width: 100%;
+		padding-top: 15px;
+		font-size:17px;
+		line-height: 1.5;
+		height:0px;
+		overflow: hidden;
+		transition: .5s
+	}
+	.acord .content-container.active .answer{
+		height: 200px;
+	}
+	#quote{
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 50px;
+		text-align: center;
+	
+	}
+	.container{
+		width: 550px;
+		height: 350px;
+	}
+	.main-content{
+		width:85%;
+		height:150px;
+		background-color:  #e6ecf0;
+		border-radius: 15px;
+		padding: 40px 30px;
+	}
+	.text-area{
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	.person{
+		font-size: 19px;
+		color:#f51128;
+		text-transform: uppercase;
+		margin-top: 15px;
+	}
+	.button-area button{
+		background-image:linear-gradient(45deg, rgb(186, 65, 152), deeppink);
+		padding: 8px 16px;
+		border-radius: 5px;
+		color: whitesmoke;
+		font-weight: 700;
+	}
+		
+	
+
+	/* Responsive styles */
+	/* Adjust padding for smaller screens */
+	#landing,
+	#gallery,
+	#contact,
+	#information {
+		padding: 50px 15px;
+	}
+
+	@media (max-width: 767px) {
+		#landing,
+		#gallery,
+		#contact,
+		#information {
+			padding: 30px 15px;
+		}
+	}
+
+	/* Center the logo on smaller screens */
+	@media (max-width: 576px) {
+		.logo {
+			text-align: center;
+		}
+	}
+
+	/* Footer styles */
+	footer {
+		background-color: #333;
+		color: #fff;
+		text-align: center;
+		padding: 20px;
+	}
+
+	footer p {
+		margin: 0;
+	}
+
+	footer a {
+		color: #fff;
+		text-decoration: none;
+		padding: 5px;
+	}
+/* Responsive styles using media queries */
+        @media screen and (max-width: 768px) {
+            /* Adjust the font size for smaller screens */
+            body {
+                font-size: 14px;
+            }
+
+            /* Reduce padding and margin for small screens */
+            header,
+            #home h1,
+            .P {
+                padding: 10px;
+                margin: 5px;
+            }
+
+            /* Center the logo on smaller screens */
+            #logo {
+                display: block;
+                margin: 0 auto;
+            }
+
+            /* Adjust the layout for the home section on smaller screens */
+            .bg {
+                display: flex;
+                flex-direction: column;
+            }
+            .half-width {
+                width: 100%;
+            }
+        }
